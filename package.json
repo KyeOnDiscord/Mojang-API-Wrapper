@@ -1,6 +1,6 @@
 {
   "name": "@kye5000/mojang-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mojang API Wrapper made in JavaScript",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,18 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-    "mojang-api": "^1.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyeOnDiscord/Mojang-API-Wrapper.git"
   },
-  "devDependencies": {}
+  "keywords": [
+    "mojang",
+    "api",
+    "javascript",
+    "minecraft"
+  ],
+  "bugs": {
+    "url": "https://github.com/KyeOnDiscord/Mojang-API-Wrapper/issues"
+  },
+  "homepage": "https://github.com/KyeOnDiscord/Mojang-API-Wrapper#readme"
 }
