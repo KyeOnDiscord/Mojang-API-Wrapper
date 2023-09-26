@@ -1,7 +1,5 @@
 class MojangAPI {
-  constructor() {}
-
-  async GetBlockedServers() {
+  static async GetBlockedServers() {
     var requestOptions = {
       method: "GET",
       redirect: "follow",
@@ -14,7 +12,7 @@ class MojangAPI {
     return (await resp.text()).split("\n");
   }
 
-  async GetUUIDFromUsername(username) {
+  static async GetUUIDFromUsername(username) {
     var requestOptions = {
       method: "GET",
       redirect: "follow",
@@ -27,7 +25,7 @@ class MojangAPI {
     return await resp.json();
   }
 
-  async GetMultipleUUIDFromUsername(Usernames) {
+  static async GetMultipleUUIDFromUsername(Usernames) {
     var requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -42,7 +40,7 @@ class MojangAPI {
     return await resp.json();
   }
 
-  async GetProfileFromUUID(uuid) {
+  static async GetProfileFromUUID(uuid) {
     var requestOptions = {
       method: "GET",
       redirect: "follow",
